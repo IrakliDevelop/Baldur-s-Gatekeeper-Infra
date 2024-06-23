@@ -1,0 +1,27 @@
+# General
+*.log
+*.tmp
+*.backup
+
+# Terraform specific
+**/.terraform/*
+*.tfstate
+*.tfstate.backup
+*.tfvars
+terraform.tfvars
+crash.log
+
+# Helm specific
+**/charts/*
+**/tmpcharts/*
+*.tgz
+secrets.yaml
+
+# Ignore Kubernetes sensitive files
+*.cert
+*.key
+
+# Ignore IDE and editor folders
+.vscode/
+.idea/
+*.swp
